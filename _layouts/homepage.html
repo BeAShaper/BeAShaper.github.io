@@ -43,16 +43,93 @@
         {{ site.email }}
         <br>
         <br>
+        {% if site.zju %}
+        <a class="image university"><img src="{{site.zju}}" alt="Zhejiang University" onContextMenu="return false" /></a>
+        {% endif %}
+
+        <a class="image university"><img src="{{site.sysu}}" alt="SUN-YAT SEN University" onContextMenu="return false" /></a>
+
         {% endif %}
 
       </header>
+
+      <section class="section-md">
+      
+      {% if site.about_me %}
+        <section>
+          <h2>About me</h2>
+          <p>
+            {{site.about_me}}
+          </p>
+        </section>
+      {% endif %}
+
       <section>
+      {{content}}
+      </section>
+      
+      <section>     
+        <h2>Publications</h2>
 
-      {{ content }}
+        <table width=100% border="0" cellspacing="0">
+            <tbody>
+                {% for publication in site.data.publications %}
+                <tr>
+                      <td >
+                          <img width="140" height="140" src="{{ publication.teaser_img }}" class= "image publication">
+                      </td>
+                      <td> 
+                          &nbsp;&nbsp;&nbsp;
+                      </td>
+                      <td>
+                          {{publication.project_name}}
+                          <p>
+                            {{publication.authors}}
+                          </p>
+                          <p>
+                            {{publication.platform}}
+                          </p>
+                          <p>
+                              {% if publication.project_page_url %}
+                              <a href="{{ publication.project_page_url }}">[Project Page]</a>
+                              {% else %}
+                              <!-- <a>[Project Page]</a> -->
+                              {% endif %}
+                          </p>
+                          <p>
+                              {% if publication.pdf_link %}
+                              <a href="{{ publication.pdf_link }}">[pdf]</a>
+                              {% else %}
+                              <!-- <a>[pdf]</a> -->
+                              {% endif %}
+                          </p>
+                      </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+        </table>
 
-      <br>
+      </section>
+      <!-- end Publications -->
 
-      <p><small>Powered by Jekyll and <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener">Minimal Light</a> theme.</small></p>
+      <!-- begin Honor & Awards -->
+      {% comment %} <section>
+        
+        <h2>Honor & Awards</h2>
+
+        {% for project in site.data.educations %}
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <h2 class="resume-item-details">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h2>
+          <!-- <h5 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4> -->
+          <!-- <p class="resume-item-copy">{{ project.description }}</p> -->
+        </div>
+        {% endfor %}
+
+      </section> {% endcomment %}
+      <!-- end Honor & Awards -->
+      
+
+     
 
       </section>
       <footer>

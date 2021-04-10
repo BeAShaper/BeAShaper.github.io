@@ -1,15 +1,17 @@
-title: Your Name
+title: Xiaohe Ma
 position: Ph.D. Student
-affiliation: Your Affiliation
-email: yourname (at) example.edu
+affiliation: the State Key Lab of CAD&CG, Zhejiang University 
+email: xiaohema1998@gmail.com
 keywords: minimal academic
+about_me: I received my Bachelor degree of engineering from <a href="http://www.sysu.edu.cn/">Sun Yat-sen University</a> in 2019. Currently I am a Ph.D. student in the State Key Lab of CAD&CG, Zhejiang University (supervised by <a href=http://www.cad.zju.edu.cn/home/hwu/>Prof.Hongzhi Wu</a>).
 google_scholar: https://scholar.google.com/
-github_link: https://github.com/yaoyao-liu/minimal-light
-linkedin: https://www.linkedin.com/
-avatar: ./assets/img/avatar.png
+github_link: https://github.com/BeAShaper
+# linkedin: https://www.linkedin.com/
+avatar: ./assets/img/photo2.jpg
+zju: ./assets/img/zju.png
+sysu: ./assets/img/sysu.png
 google_analytics: UA-111540567-4
 favicon: ./assets/img/favicon.png
 favicon_dark: ./assets/img/favicon-dark.png
-description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
 canonical: https://minimal-light.yyliu.net/
 remote_theme: yaoyao-liu/minimal-light
