@@ -4,7 +4,7 @@
 # Learning Efficient Illumination Multiplexing for Joint Capture of Reflectance and Shape
 - project_name: Free-form Scanning of Non-planar Appearance with Neural Trace Photography
   teaser_img: assets/img/scan.png
-  authors: <b>Xiaohe Ma</b>, Kaizhang Kang, Ruisheng Zhu, <a href=http://www.cad.zju.edu.cn/home/hwu/>Hongzhi Wu</a> and <a href=http://kunzhou.net/>Kun Zhou</a>  
+  authors: <b>Xiaohe Ma</b>, <a href=http://cocoakang.cn/>Kaizhang Kang</a>, Ruisheng Zhu, <a href=http://www.cad.zju.edu.cn/home/hwu/>Hongzhi Wu</a> and <a href=http://kunzhou.net/>Kun Zhou</a>  
   platform: Conditionally accepted to SIGGRAPH 2021
   # ACM Trans. Graph. (Proc. SIGGRAPH Asia 2019), 38, 6 (Nov. 2019), 165.
   # project_page_url: http://www.cad.zju.edu.cn/home/hwu/publications/jointcap/project.html
@@ -13,7 +13,7 @@
 # Learning Efficient Illumination Multiplexing for Joint Capture of Reflectance and Shape
 - project_name: Learning Efficient Photometric Feature Transform for Multi-view Stereo
   teaser_img: assets/img/dift.png
-  authors: Kaizhang Kang, Cihui Xie, Ruisheng Zhu, <b>Xiaohe Ma</b>, <a href=https://www.cs.sfu.ca/~pingtan/>Ping Tan</a>, <a href=http://www.cad.zju.edu.cn/home/hwu/>Hongzhi Wu</a> and <a href=http://kunzhou.net/>Kun Zhou</a>  
+  authors: <a href=http://cocoakang.cn/>Kaizhang Kang</a>, Cihui Xie, Ruisheng Zhu, <b>Xiaohe Ma</b>, <a href=https://www.cs.sfu.ca/~pingtan/>Ping Tan</a>, <a href=http://www.cad.zju.edu.cn/home/hwu/>Hongzhi Wu</a> and <a href=http://kunzhou.net/>Kun Zhou</a>  
   # platform: ACM Trans. Graph. (Proc. SIGGRAPH Asia 2019), 38, 6 (Nov. 2019), 165.
   pdf_link: https://arxiv.org/abs/2103.14794
   # project_page_url: http://www.cad.zju.edu.cn/home/hwu/publications/jointcap/project.html
