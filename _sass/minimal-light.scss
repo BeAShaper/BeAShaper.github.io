@@ -136,7 +136,11 @@ h2 {
 p, ul, ol, table, pre, dl {
   margin:0 0 0px;
 }
-
+div.visit {
+  opacity:0.0;
+  width: 5px;
+  height: 5px;
+}
 h1, h2, h3 {
   line-height:1.1;
 }
