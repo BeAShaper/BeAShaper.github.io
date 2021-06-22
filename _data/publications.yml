@@ -7,7 +7,7 @@
   authors: <b>Xiaohe Ma</b>, <a href=http://cocoakang.cn/>Kaizhang Kang</a>, Ruisheng Zhu, <a href=http://www.cad.zju.edu.cn/home/hwu/>Hongzhi Wu</a> and <a href=http://kunzhou.net/>Kun Zhou</a>  
   platform: ACM Trans. Graph. (Proc. SIGGRAPH 2021), 40, 4 (Aug. 2021), 124.
   # ACM Trans. Graph. (Proc. SIGGRAPH Asia 2019), 38, 6 (Nov. 2019), 165.
-  # project_page_url: http://www.cad.zju.edu.cn/home/hwu/publications/jointcap/project.html
+  project_page_url: https://svbrdf.github.io/publications/scanner/project.html
   # description: 
 
 # Learning Efficient Illumination Multiplexing for Joint Capture of Reflectance and Shape
@@ -17,4 +17,4 @@
   # platform: ACM Trans. Graph. (Proc. SIGGRAPH Asia 2019), 38, 6 (Nov. 2019), 165.
   pdf_link: https://arxiv.org/abs/2103.14794
   # project_page_url: http://www.cad.zju.edu.cn/home/hwu/publications/jointcap/project.html
-  # description:
+  # description: 
