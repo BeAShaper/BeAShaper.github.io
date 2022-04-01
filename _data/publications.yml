@@ -20,7 +20,7 @@
 - project_name: Learning Efficient Photometric Feature Transform for Multi-view Stereo
   teaser_img: assets/img/dift.png
   authors: <a href=http://cocoakang.cn/>Kaizhang Kang</a>, Cihui Xie, Ruisheng Zhu, <b>Xiaohe Ma</b>, <a href=https://www.cs.sfu.ca/~pingtan/>Ping Tan</a>, <a href=http://www.cad.zju.edu.cn/home/hwu/>Hongzhi Wu</a> and <a href=http://kunzhou.net/>Kun Zhou</a>  
-  platform: To appear in ICCV 2021.
-  pdf_link: https://arxiv.org/abs/2103.14794
+  platform: ICCV 2021 (pp. 5956-5965).
+  project_page_url: https://svbrdf.github.io/publications/ptmvs/project.html
   # project_page_url: http://www.cad.zju.edu.cn/home/hwu/publications/jointcap/project.html
   # description: 
