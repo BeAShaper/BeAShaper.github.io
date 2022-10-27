@@ -11,10 +11,10 @@
 - project_name: Free-form Scanning of Non-planar Appearance with Neural Trace Photography
   teaser_img: assets/img/scan.gif
   authors: <b>Xiaohe Ma</b>, <a href=http://cocoakang.cn/>Kaizhang Kang</a>, Ruisheng Zhu, <a href=http://www.cad.zju.edu.cn/home/hwu/>Hongzhi Wu</a> and <a href=http://kunzhou.net/>Kun Zhou</a>  
-  platform: ACM Trans. Graph. (Proc. SIGGRAPH 2021), 40, 4 (Aug. 2021), 124.
+  platform: ACM Trans. Graph. (Proc. SIGGRAPH 2021), 40, 4 (Aug. 2021), 124. 
   # ACM Trans. Graph. (Proc. SIGGRAPH Asia 2019), 38, 6 (Nov. 2019), 165.
   project_page_url: https://svbrdf.github.io/publications/scanner/project.html
-  # description: 
+  description: Patent# ZL202110634121.1
 
 # Learning Efficient Illumination Multiplexing for Joint Capture of Reflectance and Shape
 - project_name: Learning Efficient Photometric Feature Transform for Multi-view Stereo
