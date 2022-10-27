@@ -104,6 +104,13 @@
                             {{publication.platform}}
                           </p>
                           <p>
+                              {% if publication.description %}
+                              {{publication.description}}
+                              {% else %}
+                              <!-- <a></a> -->
+                              {% endif %}
+                          </p>
+                          <p>
                               {% if publication.project_page_url %}
                               <a href="{{ publication.project_page_url }}">[Project Page]</a>
                               {% else %}
@@ -115,13 +122,6 @@
                               <a href="{{ publication.pdf_link }}">[arXiv]</a>
                               {% else %}
                               <!-- <a>[pdf]</a> -->
-                              {% endif %}
-                          </p>
-                          <p>
-                              {% if publication.description %}
-                              {{publication.description}}
-                              {% else %}
-                              <!-- <a></a> -->
                               {% endif %}
                           </p>
                       </td>
