@@ -117,6 +117,13 @@
                               <!-- <a>[pdf]</a> -->
                               {% endif %}
                           </p>
+                          <p>
+                              {% if publication.description %}
+                              {{publication.description}}
+                              {% else %}
+                              <!-- <a></a> -->
+                              {% endif %}
+                          </p>
                       </td>
                 </tr>
               {% endfor %}
