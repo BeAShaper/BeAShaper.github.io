@@ -119,11 +119,18 @@
                           </p>
                           <p>
                               {% if publication.pdf_link %}
-                              <a href="{{ publication.pdf_link }}">[arXiv]</a>
+                              <a href="{{ publication.pdf_link }}">[Preprint(.PDF)]</a>
                               {% else %}
                               <!-- <a>[pdf]</a> -->
                               {% endif %}
                           </p>
+                          <p>
+                            {% if publication.video_link_youtube %}
+                            [Video: <a href="{{ publication.video_link_youtube }}">Youtube</a>/<a href="{{ publication.video_link_bilibili }}"></a>Bilibili</a>]
+                            {% else %}
+                            <!-- <a>[pdf]</a> -->
+                            {% endif %}
+                        </p>
                       </td>
                 </tr>
               {% endfor %}
