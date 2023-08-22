@@ -17,7 +17,7 @@
   platform: ACM Trans. Graph. (Proc. SIGGRAPH 2021), 40, 4 (Aug. 2021), 124. 
   # ACM Trans. Graph. (Proc. SIGGRAPH Asia 2019), 38, 6 (Nov. 2019), 165.
   project_page_url: https://svbrdf.github.io/publications/scanner/project.html
-  description: Patent# CN113362466A
+  description: Patent# CN113362466A / WO2022256962
 
 # Learning Efficient Illumination Multiplexing for Joint Capture of Reflectance and Shape
 - project_name: Learning Efficient Photometric Feature Transform for Multi-view Stereo
