@@ -1,28 +1,36 @@
 # Projects
 # uncomment the urls if you wish to display them, and add your own URL
 
-# Learning Efficient Illumination Multiplexing for Joint Capture of Reflectance and Shape
+- project_name: OpenSVBRDF: A Database of Measured Spatially-Varying Reflectance
+  teaser_img: assets/img/sorted_teaser_new.jpg
+  authors: <b>Xiaohe Ma</b>, Xianmin Xu, Leyao Zhang, <a href=http://hongzhiwu.com/>Hongzhi Wu</a> and <a href=http://kunzhou.net/>Kun Zhou</a>  
+  platform: To appear in SIGGRAPH ASIA 2023
+  # pdf_link: https://ieeexplore.ieee.org/document/10081427
+  # video_link_youtube: https://youtu.be/v2SyeMUV6_Y
+  # video_link_bilibili: https://www.bilibili.com/video/BV1ZL411r7iq/
+
+# Efficient Reflectance Capture with a Deep Gated Mixture-of-Experts
 - project_name: Efficient Reflectance Capture with a Deep Gated Mixture-of-Experts
   teaser_img: assets/img/moe.gif
-  authors: <b>Xiaohe Ma</b>, Yaxin Yu, <a href=http://www.cad.zju.edu.cn/home/hwu/>Hongzhi Wu</a> and <a href=http://kunzhou.net/>Kun Zhou</a>  
+  authors: <b>Xiaohe Ma</b>, Yaxin Yu, <a href=http://hongzhiwu.com/>Hongzhi Wu</a> and <a href=http://kunzhou.net/>Kun Zhou</a>  
   platform: To appear in IEEE TVCG
   pdf_link: https://ieeexplore.ieee.org/document/10081427
   video_link_youtube: https://youtu.be/v2SyeMUV6_Y
   video_link_bilibili: https://www.bilibili.com/video/BV1ZL411r7iq/
 
-# Learning Efficient Illumination Multiplexing for Joint Capture of Reflectance and Shape
+# Free-form Scanning of Non-planar Appearance with Neural Trace Photography
 - project_name: Free-form Scanning of Non-planar Appearance with Neural Trace Photography
   teaser_img: assets/img/scan.gif
-  authors: <b>Xiaohe Ma</b>, <a href=http://cocoakang.cn/>Kaizhang Kang</a>, Ruisheng Zhu, <a href=http://www.cad.zju.edu.cn/home/hwu/>Hongzhi Wu</a> and <a href=http://kunzhou.net/>Kun Zhou</a>  
+  authors: <b>Xiaohe Ma</b>, <a href=http://cocoakang.cn/>Kaizhang Kang</a>, Ruisheng Zhu, <a href=http://hongzhiwu.com/>Hongzhi Wu</a> and <a href=http://kunzhou.net/>Kun Zhou</a>  
   platform: ACM Trans. Graph. (Proc. SIGGRAPH 2021), 40, 4 (Aug. 2021), 124. 
   # ACM Trans. Graph. (Proc. SIGGRAPH Asia 2019), 38, 6 (Nov. 2019), 165.
   project_page_url: https://svbrdf.github.io/publications/scanner/project.html
   description: Patent# CN113362466A
 
-# Learning Efficient Illumination Multiplexing for Joint Capture of Reflectance and Shape
+# Learning Efficient Photometric Feature Transform for Multi-view Stereo
 - project_name: Learning Efficient Photometric Feature Transform for Multi-view Stereo
   teaser_img: assets/img/dift.png
-  authors: <a href=http://cocoakang.cn/>Kaizhang Kang</a>, Cihui Xie, Ruisheng Zhu, <b>Xiaohe Ma</b>, <a href=https://www.cs.sfu.ca/~pingtan/>Ping Tan</a>, <a href=http://www.cad.zju.edu.cn/home/hwu/>Hongzhi Wu</a> and <a href=http://kunzhou.net/>Kun Zhou</a>  
+  authors: <a href=http://cocoakang.cn/>Kaizhang Kang</a>, Cihui Xie, Ruisheng Zhu, <b>Xiaohe Ma</b>, <a href=https://www.cs.sfu.ca/~pingtan/>Ping Tan</a>, <a href=http://hongzhiwu.com/>Hongzhi Wu</a> and <a href=http://kunzhou.net/>Kun Zhou</a>  
   platform: ICCV 2021 (pp. 5956-5965).
   project_page_url: https://svbrdf.github.io/publications/ptmvs/project.html
   # project_page_url: http://www.cad.zju.edu.cn/home/hwu/publications/jointcap/project.html
