@@ -3,7 +3,7 @@
 
 - project_name: "OpenSVBRDF: A Database of Measured Spatially-Varying Reflectance"
   teaser_img: assets/img/sorted_teaser_new.jpg
-  authors: <b>Xiaohe Ma</b>, Xianmin Xu, Leyao Zhang, <a href=http://hongzhiwu.com/>Hongzhi Wu</a> and <a href=http://kunzhou.net/>Kun Zhou</a>  
+  authors: <b>Xiaohe Ma</b>, Xianmin Xu, Leyao Zhang, <a href=http://kunzhou.net/>Kun Zhou</a> and <a href=http://hongzhiwu.com/>Hongzhi Wu</a>   
   platform: To appear in SIGGRAPH ASIA 2023
   # pdf_link: https://ieeexplore.ieee.org/document/10081427
   # video_link_youtube: https://youtu.be/v2SyeMUV6_Y
