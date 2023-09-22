@@ -4,10 +4,11 @@
 - project_name: "OpenSVBRDF: A Database of Measured Spatially-Varying Reflectance"
   teaser_img: assets/img/sorted_teaser_new.jpg
   authors: <b>Xiaohe Ma</b>, Xianmin Xu, Leyao Zhang, <a href=http://kunzhou.net/>Kun Zhou</a> and <a href=http://hongzhiwu.com/>Hongzhi Wu</a>   
-  platform: To appear in SIGGRAPH ASIA 2023
+  platform: To appear in ACM SIGGRPAH Asia (TOG) 2023.
+  project_page_url: https://svbrdf.github.io/publications/OpenSVBRDF/project.html
   # pdf_link: https://ieeexplore.ieee.org/document/10081427
-  # video_link_youtube: https://youtu.be/v2SyeMUV6_Y
-  # video_link_bilibili: https://www.bilibili.com/video/BV1ZL411r7iq/
+  video_link_youtube: https://www.youtube.com/watch?v=tDccO4-SQQE
+  video_link_bilibili: https://www.bilibili.com/video/BV1Uh4y1A7Ug/?spm_id_from=333.999.0.0&vd_source=a7b0b9f0d9a9eb2a2ffb352cafe34c20
 
 # Efficient Reflectance Capture with a Deep Gated Mixture-of-Experts
 - project_name: Efficient Reflectance Capture with a Deep Gated Mixture-of-Experts
