@@ -125,6 +125,13 @@
                               {% endif %}
                           </p>
                           <p>
+                              {% if publication.pdf_link_small %}
+                              <a href="{{ publication.pdf_link_small }}">[Preprint(.PDF, small)]</a>
+                              {% else %}
+                              <!-- <a>[pdf]</a> -->
+                              {% endif %}
+                          </p>
+                          <p>
                             {% if publication.video_link_youtube %}
                             [Video: <a href="{{ publication.video_link_youtube }}">Youtube</a>/<a href="{{ publication.video_link_bilibili }}">Bilibili</a>]
                             {% else %}
