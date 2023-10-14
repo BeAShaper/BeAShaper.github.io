@@ -111,8 +111,8 @@
                               {% endif %}
                           </p>
                           <p>
-                              {% if publication.project_page_url %}
-                              <a href="{{ publication.project_page_url }}">[Project Page]</a><a href="{{ publication.database_url }}">[Database Website]</a>
+                              {% if publication.project_page_url and publication.database_url %}
+                              <a href="{{ publication.project_page_url }}">[Project Page]</a>  <a href="{{ publication.database_url }}">[Database Website]</a>
                               {% else %}
                               <!-- <a>[Project Page]</a> -->
                               {% endif %}
