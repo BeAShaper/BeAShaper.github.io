@@ -2,7 +2,7 @@
 # uncomment the urls if you wish to display them, and add your own URL
 
 - project_name: "OpenSVBRDF: A Database of Measured Spatially-Varying Reflectance"
-  teaser_img: assets/img/sorted_teaser_new.jpg
+  teaser_img: assets/img/database.gif
   authors: <b>Xiaohe Ma</b>, Xianmin Xu, Leyao Zhang, <a href=http://kunzhou.net/>Kun Zhou</a> and <a href=http://hongzhiwu.com/>Hongzhi Wu</a>   
   platform: To appear in ACM SIGGRPAH Asia (TOG) 2023.
   project_page_url: https://opensvbrdf.github.io/
