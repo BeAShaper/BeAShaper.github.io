@@ -49,14 +49,14 @@
         {% endif %}
         {{ site.affiliation }}
         {% if site.email %}
-        <br>
-        {{ site.email }}
-        <br>
-        <br>
-        {% if site.zju %}
+            <br>
+            {{ site.email }}
+            <br>
+            <br>
+            {% if site.zju %}
         
-          <a><img class="image university" src="{{site.zju}}" alt="Zhejiang University" onContextMenu="return false" /></a>
-          {% endif %}
+            <a><img class="image university" src="{{site.zju}}" alt="Zhejiang University" onContextMenu="return false" /></a>
+            {% endif %}
 
           <a><img class="image university" src="{{site.sysu}}" alt="SUN-YAT SEN University" onContextMenu="return false" /></a>
         
@@ -106,13 +106,10 @@
                           <p>
                               {% if publication.description %}
                               {{publication.description}}
-                              <!-- {% else %} -->
-                              <!-- <a></a> -->
                               {% endif %}
                           </p>
                           <p>
-                              <!-- {% if publication.project_page_url and publication.database_url %}
-                              <a href="{{ publication.project_page_url }}">[Project Page]</a>  <a href="{{ publication.database_url }}">[Database Website]</a> -->
+                              
                               {% if publication.project_page_url %}
                               <a href="{{ publication.project_page_url }}">[Project Page]</a>
                               {% endif %}
@@ -120,22 +117,16 @@
                           <p>
                               {% if publication.pdf_link %}
                               <a href="{{ publication.pdf_link }}">[Preprint(.PDF)]</a>
-                              <!-- {% else %} -->
-                              <!-- <a>[pdf]</a> -->
                               {% endif %}
                           </p>
                           <p>
                               {% if publication.pdf_link_small %}
                               <a href="{{ publication.pdf_link_small }}">[Preprint(.PDF, small)]</a>
-                              <!-- {% else %} -->
-                              <!-- <a>[pdf]</a> -->
                               {% endif %}
                           </p>
                           <p>
                             {% if publication.video_link_youtube %}
                             [Video: <a href="{{ publication.video_link_youtube }}">Youtube</a>/<a href="{{ publication.video_link_bilibili }}">Bilibili</a>]
-                            <!-- {% else %} -->
-                            <!-- <a>[pdf]</a> -->
                             {% endif %}
                         </p>
                       </td>
