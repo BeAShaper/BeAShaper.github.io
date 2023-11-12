@@ -96,7 +96,7 @@
                           &nbsp;&nbsp;&nbsp;
                       </td>
                       <td>
-                          {{publication.project_name}}
+                            {{publication.project_name}}
                           <p>
                             {{publication.authors}}
                           </p>
@@ -106,7 +106,7 @@
                           <p>
                               {% if publication.description %}
                               {{publication.description}}
-                              {% else %}
+                              <!-- {% else %} -->
                               <!-- <a></a> -->
                               {% endif %}
                           </p>
@@ -120,27 +120,27 @@
                           <p>
                               {% if publication.pdf_link %}
                               <a href="{{ publication.pdf_link }}">[Preprint(.PDF)]</a>
-                              {% else %}
+                              <!-- {% else %} -->
                               <!-- <a>[pdf]</a> -->
                               {% endif %}
                           </p>
                           <p>
                               {% if publication.pdf_link_small %}
                               <a href="{{ publication.pdf_link_small }}">[Preprint(.PDF, small)]</a>
-                              {% else %}
+                              <!-- {% else %} -->
                               <!-- <a>[pdf]</a> -->
                               {% endif %}
                           </p>
                           <p>
                             {% if publication.video_link_youtube %}
                             [Video: <a href="{{ publication.video_link_youtube }}">Youtube</a>/<a href="{{ publication.video_link_bilibili }}">Bilibili</a>]
-                            {% else %}
+                            <!-- {% else %} -->
                             <!-- <a>[pdf]</a> -->
                             {% endif %}
                         </p>
                       </td>
                 </tr>
-              {% endfor %}
+                {% endfor %}
             </tbody>
         </table>
 
