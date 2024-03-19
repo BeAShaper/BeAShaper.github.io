@@ -111,22 +111,27 @@
                           <p>
                               
                               {% if publication.project_page_url %}
-                              <a href="{{ publication.project_page_url }}">[Project Page]</a>
+                              <a href="{{ publication.project_page_url }}" class="link-separator">[Project Page]</a>
                               {% endif %}
-                          </p>
-                          <p>
+                          <!-- </p>
+                          <p> -->
                               {% if publication.pdf_link %}
-                              <a href="{{ publication.pdf_link }}">[Preprint(.PDF)]</a>
+                              <a href="{{ publication.pdf_link }}" class="link-separator">[Preprint(.PDF)]</a>
                               {% endif %}
-                          </p>
-                          <p>
+                          <!-- </p>
+                          <p> -->
                               {% if publication.pdf_link_small %}
-                              <a href="{{ publication.pdf_link_small }}">[Preprint(.PDF, small)]</a>
+                              <a href="{{ publication.pdf_link_small }}" class="link-separator">[Preprint(.PDF, small)]</a>
                               {% endif %}
-                          </p>
-                          <p>
+                          <!-- </p>
+                          <p> -->
                             {% if publication.video_link_youtube %}
-                            [Video: <a href="{{ publication.video_link_youtube }}">Youtube</a>/<a href="{{ publication.video_link_bilibili }}">Bilibili</a>]
+                            <a href="{{ publication.video_link_youtube }}">[Video: Youtube</a><a href="{{ publication.video_link_bilibili }}">/Bilibili]</a>
+                            {% endif %}
+                        <!-- </p>
+                        <p> -->
+                            {% if publication.database_url %}
+                            <a href="{{ publication.database_url }}" class="link-separator">[Database]</a>
                             {% endif %}
                         </p>
                       </td>
