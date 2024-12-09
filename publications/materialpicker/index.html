@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="MaterialPicker: Multi-Modal Material Generation with Diffusion Transformers">
+  <meta name="keywords" content="Material appearance, capture, generative models">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MaterialPicker: Multi-Modal Material Generation with Diffusion Transformers</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">MaterialPicker: Multi-Modal Material Generation with Diffusion Transformers</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://xiaohema98.com">Xiaohe Ma</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://valentin.deschaintre.fr/">Valentin Deschaintre</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="http://www.miloshasan.net/">Miloš Hašan</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://luanfujun.com/">Fujun Luan</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://kunzhou.net/">Kun Zhou</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+                <a href="http://hongzhiwu.com">Hongzhi Wu</a><sup>1</sup>,
+              </span>
+            <span class="author-block">
+              <a href="https://yiweihu.netlify.app/">Yiwei Hu</a><sup>2</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>State Key Lab of CAD&CG,Zhejiang University,</span>
+            <span class="author-block"><sup>2</sup>Adobe Research</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://github.com/BeAShaper/BeAShaper.github.io/publications/materialpicker/materialpicker.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2412.03225"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="ai ai-arxiv"></i> -->
+                      <img src="./static/images/arxiv-logomark-small.png" alt="ArXiv" class="ai ai-arxiv" />
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span> -->
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+                </span> -->
+               
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+    <a> <img class="" src="./static/images/teaser.png"/> </a>
+      <!-- <h2 class="subtitle has-text-centered"> -->
+        <p>
+        We introduce MaterialPicker, a DiT-based model that generates high-quality materials, conditioned on image crops and/or text prompts. Our model accurately captures textures and material properties even from photographs of distorted or partially obscured surfaces.
+We demonstrate MaterialPicker by extracting material properties (albedo, normal, height, roughness and metallicity, shown in a column next to the input crops) from smartphone-captured photos, then applying these materials in a 3D scene for photo-realistic rendering results.
+</p>
+      <!-- </h2> -->
+    </div>
+  </div>
+</section>
+
+<section class="hero">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+            </div>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            High-quality material generation is key for virtual environment authoring and inverse rendering. We propose MaterialPicker, a multi-modal material generator leveraging a Diffusion Transformer (DiT) architecture, improving and simplifying the creation of high-quality materials from text prompts and/or photographs. Our method can generate a material based on an image crop of a material sample, even if the captured surface is distorted, viewed at an angle or partially occluded, as is often the case in photographs of natural scenes. We further allow the user to specify a text prompt to provide additional guidance for the generation. We finetune a pre-trained DiT-based video generator into a material generator, where each material map is treated as a frame in a video sequence. We evaluate our approach both quantitatively and qualitatively and show that it enables more diverse material generation and better distortion correction than previous work.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+<section class="hero">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+    </div>
+    </div>
+    <div class="content has-text-justified">
+        <p>
+            We conduct tests on diverse material types in both indoor and outdoor scenes, demonstrating the generalization capability of our model. The first column shows real photographs captured by smartphones, before cropping. The box indicates the cropped area, which is the image actually used as input for the model in the second column. Third to the ninth columns show the generated material maps and rendering under two environment maps. The last column shows the mask of the dominant material location <strong>automatically predicted</strong> by our model. The leftmost side of each row is labeled with the text conditioning input used.
+        </p>
+        <img src="./static/images/all_0.jpg" alt="A very long image">
+        
+    </div>
+    </div>
+</div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{ma2024materialpicker,
+  author    = {Xiaohe Ma, Valentin Deschaintre, Miloš Hašan, Fujun Luan, Hongzhi Wu, Kun Zhou, Yiwei Hu},
+  title     = {MaterialPicker: Multi-Modal Material Generation with Diffusion Transformers},
+  journal   = {Arxiv},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <!-- <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div> -->
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            We thank the <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> for providing the source code for this website. </p>
+
+            The 3D model in the teaser was downloaded from <a
+            href="https://open3dlab.com/project/75dc92db-9d74-4cea-beeb-8a628e4efacd/">Open3DLab</a> , licensed under <a
+            href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>. We gratefully acknowledge Open3DLab for providing the model. For the purpose of visualization in our work, we made adjustments to the positions of certain objects, modified the material maps, and updated the lighting settings in Blender.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

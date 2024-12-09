@@ -6,10 +6,10 @@ layout: homepage
 
 I am a Ph.D. student in the State Key Lab of CAD&CG, Zhejiang University (supervised by Prof.Hongzhi Wu). -->
 
-## Research Interests
+<!-- ## Experience
 
-- appearance acquisition / modeling / rendering
-- deep learning in computer graphics / vision
+| Jun. 2024 - Sep. 2024 | Research Intern  | Adobe Inc., San Jose, California, U.S.    | -->
+
 <!-- ## Publications -->
 
 <!-- - **Free-form Scanning of Non-planar Appearance with Neural Trace Photography**
