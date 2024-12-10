@@ -29,8 +29,11 @@
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/image-slider.css">
+  <link href="https://www.cssscript.com/demo/sticky.css" rel="stylesheet" type="text/css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
@@ -182,8 +185,21 @@ We demonstrate MaterialPicker by extracting material properties (albedo, normal,
         <p>
             We conduct tests on diverse material types in both indoor and outdoor scenes, demonstrating the generalization capability of our model. The first column shows real photographs captured by smartphones, before cropping. The box indicates the cropped area, which is the image actually used as input for the model in the second column. Third to the ninth columns show the generated material maps and rendering under two environment maps. The last column shows the mask of the dominant material location <strong>automatically predicted</strong> by our model. The leftmost side of each row is labeled with the text conditioning input used.
         </p>
-        <img src="./static/images/all_0.jpg" alt="A very long image">
-        
+        <div class="images">
+            <i data-action="left" class='btn-chevron left bx bx-chevron-left'></i>
+            <div class="slider">
+                <img class="slider-image" src="static/images/web_0_resize.jpg">
+                <img class="slider-image" src="static/images/web_1_resize.jpg">
+                <img class="slider-image" src="static/images/web_2_resize.jpg">
+                <img class="slider-image" src="static/images/web_3_resize.jpg">
+                <img class="slider-image" src="static/images/web_4_resize.jpg">
+                <img class="slider-image" src="static/images/web_5_resize.jpg">
+                <img class="slider-image" src="static/images/web_6_resize.jpg">
+                <img class="slider-image" src="static/images/web_7_resize.jpg">
+                <img class="slider-image" src="static/images/web_8_resize.jpg">
+            </div>
+            <i data-action="right" class='btn-chevron right bx bx-chevron-right'></i>
+        </div>
     </div>
     </div>
 </div>
@@ -236,6 +252,8 @@ We demonstrate MaterialPicker by extracting material properties (albedo, normal,
     </div>
   </div>
 </footer>
+<script src="./static/js/image-slider.js"></script>
+<script src="./static/js/library.js"></script>
 
 </body>
 </html>
