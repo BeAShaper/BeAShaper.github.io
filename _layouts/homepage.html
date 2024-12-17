@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
     <title>{{ site.title }} | {{site.affiliation}}</title>
 
     <meta charset="UTF-8">
@@ -11,211 +12,236 @@
     <meta name="keywords" content="{{ site.keywords }}">
     {% endif %}
     {% if site.canonical %}
-    <link rel="canonical" href="{{ site.canonical }}"/>
+    <link rel="canonical" href="{{ site.canonical }}" />
     {% endif %}
 
     <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark }}" type="image/png" />
     <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/png" />
     <script src="./assets/js/favicon-switcher.js" type="application/javascript"></script>
 
-    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin=anonymous>
-    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin=anonymous>
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css
+        integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin=anonymous>
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css
+        integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin=anonymous>
 
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6H1QP838K"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-T6H1QP838K');
+        gtag('config', 'G-T6H1QP838K');
     </script>
 
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        
-        {% if site.avatar %}
-        <a class="image avatar"><img src="{{site.avatar}}" alt="avatar" onContextMenu="return false" /></a>
-        {% endif %}
+</head>
 
-        <h1>{{ site.title }}</h1> 
-        
-        {% if site.position %}
-        {{ site.position }}
-        <br>
-        {% endif %}
-        {{ site.affiliation }}
-        {% if site.email %}
+<body>
+    <div class="wrapper">
+        <header>
+
+            {% if site.avatar %}
+            <a class="image avatar"><img src="{{site.avatar}}" alt="avatar" onContextMenu="return false" /></a>
+            {% endif %}
+
+            <h1>{{ site.title }}</h1>
+
+            {% if site.position %}
+            {{ site.position }}
+            <br>
+            {% endif %}
+            {{ site.affiliation }}
+            {% if site.email %}
             <br>
             {{ site.email }}
             <br>
             <br>
             {% if site.zju %}
-        
-            <a><img class="image university" src="{{site.zju}}" alt="Zhejiang University" onContextMenu="return false" /></a>
+
+            <a><img class="image university" src="{{site.zju}}" alt="Zhejiang University"
+                    onContextMenu="return false" /></a>
             {% endif %}
 
-          <a><img class="image university" src="{{site.sysu}}" alt="SUN-YAT SEN University" onContextMenu="return false" /></a>
-         
+            <a><img class="image university" src="{{site.sysu}}" alt="SUN-YAT SEN University"
+                    onContextMenu="return false" /></a>
 
-        {% endif %}
-        
-      </header>
 
-      <section>
-      </section>
-      <section>
-        </section>
-      
-      {% if site.about_me %}
+            {% endif %}
+
+        </header>
+
         <section>
-          <h2>About me</h2>
-          <p class="aboutme">
-            {{site.about_me}}
-          </p>
         </section>
-      {% endif %}
 
-      <section>     
-        <h2>Experience</h2>
+        {% if site.about_me %}
+        <section>
+            <h2>About me</h2>
+            <p class="aboutme">
+                {{site.about_me}}
+            </p>
+        </section>
+        {% endif %}
 
-        <table style="width: 80%;" border="0" cellspacing="0">
-            <tbody>
-                {% for exp in site.data.educations %}
-                <tr>
-                      <td>{{exp.duration}}</td>
-                      <td>{{exp.role}}</td>
-                      <td>{{exp.position}}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
 
-      </section>
+        <section>
+            <h2>Publications</h2>
 
-      
-      <section>     
-        <h2>Publications</h2>
+            <table>
+                <tbody>
+                    {% for publication in site.data.publications %}
+                    <tr>
+                        <td>
+                            <img src="{{ publication.teaser_img }}" class="image publication">
+                        </td>
+                        <td>
+                            <p>
+                                {{publication.project_name}}
+                            </p>
+                            <p>
+                                {{publication.authors}}
+                            </p>
+                            <p>
+                                {{publication.platform}}
+                            </p>
+                            <p>
+                                {% if publication.description %}
+                                {{publication.description}}
+                                {% endif %}
+                            </p>
+                            <p>
 
-        <table width=100% border="0" cellspacing="0">
-            <tbody>
-                {% for publication in site.data.publications %}
-                <tr>
-                      <td >
-                          <img width="140" height="140" src="{{ publication.teaser_img }}" class= "image publication">
-                      </td>
-                      <td> 
-                          &nbsp;&nbsp;&nbsp;
-                      </td>
-                      <td>
-                            {{publication.project_name}}
-                          <p>
-                            {{publication.authors}}
-                          </p>
-                          <p>
-                            {{publication.platform}}
-                          </p>
-                          <p>
-                              {% if publication.description %}
-                              {{publication.description}}
-                              {% endif %}
-                          </p>
-                          <p>
-                              
-                              {% if publication.project_page_url %}
-                              <a href="{{ publication.project_page_url }}" class="link-separator">[Project Page]</a>
-                              {% endif %}
-                          <!-- </p>
+                                {% if publication.project_page_url %}
+                                <a href="{{ publication.project_page_url }}" class="link-separator">[Project Page]</a>
+                                {% endif %}
+                                <!-- </p>
                           <p> -->
-                              {% if publication.pdf_link %}
-                              <a href="{{ publication.pdf_link }}" class="link-separator">[Preprint(.PDF)]</a>
-                              {% endif %}
-                          <!-- </p>
+                                {% if publication.pdf_link %}
+                                <a href="{{ publication.pdf_link }}" class="link-separator">[Preprint(.PDF)]</a>
+                                {% endif %}
+                                <!-- </p>
                           <p> -->
-                              {% if publication.pdf_link_small %}
-                              <a href="{{ publication.pdf_link_small }}" class="link-separator">[Preprint(.PDF, small)]</a>
-                              {% endif %}
-                          <!-- </p>
+                                {% if publication.pdf_link_small %}
+                                <a href="{{ publication.pdf_link_small }}" class="link-separator">[Preprint(.PDF,
+                                    small)]</a>
+                                {% endif %}
+                                <!-- </p>
                           <p> -->
-                            {% if publication.video_link_youtube %}
-                            <a href="{{ publication.video_link_youtube }}">[Video: Youtube</a><a href="{{ publication.video_link_bilibili }}">/Bilibili]</a>
-                            {% endif %}
-                        <!-- </p>
+                                {% if publication.video_link_youtube %}
+                                <a href="{{ publication.video_link_youtube }}">[Video: Youtube</a><a
+                                    href="{{ publication.video_link_bilibili }}">/Bilibili]</a>
+                                {% endif %}
+                                <!-- </p>
                         <p> -->
-                            {% if publication.database_url %}
-                            <a href="{{ publication.database_url }}" class="link-separator">[Database]</a>
-                            {% endif %}
-                        </p>
-                      </td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+                                {% if publication.database_url %}
+                                <a href="{{ publication.database_url }}" class="link-separator">[Database]</a>
+                                {% endif %}
+                            </p>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
 
-      </section>
-      <!-- end Publications -->
+        </section>
+        <!-- end Publications -->
 
-      <!-- begin Honor & Awards -->
-      {% comment %} <section>
-        
-        <h2>Honor & Awards</h2>
+        <section>
+            <h2>Experience</h2>
 
-        {% for project in site.data.educations %}
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <h2 class="resume-item-details">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h2>
-          <!-- <h5 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4> -->
-          <!-- <p class="resume-item-copy">{{ project.description }}</p> -->
-        </div>
-        {% endfor %}
+            <table>
+                <tbody>
+                    {% for experience in site.data.experiences %}
+                    <tr>
+                        <td style="width:100px;">
+                            <img src="{{ experience.image }}" class="image experience">
+                            <!-- <img src="publications/materialpicker/static/images/materialpicker.png" class="image publication"> -->
+                        </td>
+                        <td>
+                            <p>
+                                {{experience.position}}
+                            </p>
+                            <p>
+                                {{experience.role}}
+                            </p>
+                            <p>
+                                {{experience.duration}}
+                            </p>
+                            <p>
+                                {{experience.description}}
+                            </p>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
 
-      </section> {% endcomment %}
-      <!-- end Honor & Awards -->
-      
+        </section>
+        <section></section>
+        <section></section>
 
-     
+        <!-- begin Honor & Awards -->
+        {% comment %} <section>
 
-      
-      <footer>
-        
-        <div class="social-icons">
+            <h2>Honor & Awards</h2>
 
-          {% if site.linkedin %}
-          <a href="{{ site.linkedin }}" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          {% endif %}
-          {% if site.google_scholar %}
-          <a href="{{ site.google_scholar}}" target="_blank">
-            <i class="ai ai-google-scholar" style="font-size:1.6rem"></i>
-          </a>
-          {% endif %}
-          {% if site.github_link %}            
-          <a href="{{ site.github_link }}" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          {% endif %}
-        </div>
-        {% comment %} <p class="visit">
-          <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=PTXevshBTl9UJJo2L2d_Jcnotkflw96m040x5zboA9o&cl=ffffff&w=a"></script>
-        </p> {% endcomment %}
-        <br>
-        <br>
-        <br>
-      </footer>
+            {% for project in site.data.educations %}
+            <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+                <h2 class="resume-item-details">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{
+                        project.project }}</a>{% else %}{{ project.project }}{% endif %}</h2>
+                <!-- <h5 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4> -->
+                <!-- <p class="resume-item-copy">{{ project.description }}</p> -->
+            </div>
+            {% endfor %}
+
+        </section> {% endcomment %}
+        <!-- end Honor & Awards -->
+
+
+
+
+
+        <footer>
+
+            <div class="social-icons">
+                {% if site.google_scholar %}
+                <a href="{{ site.google_scholar}}" target="_blank">
+                    <i class="ai ai-google-scholar" style="font-size:1.6rem"></i>
+                </a>
+                {% endif %}
+                {% if site.github_link %}
+                <a href="{{ site.github_link }}" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                {% endif %}
+                {% if site.linkedin %}
+                <a href="{{ site.linkedin }}" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                {% endif %}
+            </div>
+            {% comment %} <p class="visit">
+                <script type="text/javascript" id="clustrmaps"
+                    src="//clustrmaps.com/map_v2.js?d=PTXevshBTl9UJJo2L2d_Jcnotkflw96m040x5zboA9o&cl=ffffff&w=a"></script>
+            </p> {% endcomment %}
+            <br>
+            <br>
+            <br>
+        </footer>
     </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script src="{{ " /assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', '{{ site.google_analytics }}', 'auto');
-      ga('send', 'pageview');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
     </script>
     {% endif %}
-  </body>
+</body>
+
 </html>

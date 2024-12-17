@@ -1,15 +1,16 @@
 title: Xiaohe Ma
 position: Ph.D. Student
-affiliation: the State Key Lab of CAD&CG, Zhejiang University 
+affiliation: the State Key Lab of CAD&CG Zhejiang University 
 email: xiaohema1998@gmail.com
 keywords: minimal academic
-about_me: I am currently a Ph.D. student in the State Key Lab of CAD&CG, Zhejiang University (supervised by <a href=http://www.cad.zju.edu.cn/home/hwu/>Prof.Hongzhi Wu</a>). I received my Bachelor degree of engineering from <a href="http://www.sysu.edu.cn/">Sun Yat-sen University</a> in 2019. <br>My research focuses on appearance acquisition,  generation, modeling and rendering.
+about_me: I am currently a Ph.D. student in the State Key Lab of CAD&CG, Zhejiang University, supervised by <a href=http://www.cad.zju.edu.cn/home/hwu/>Prof.Hongzhi Wu</a>. In 2024, I worked closely with <a href="https://yiweihu.netlify.app/">Yiwei Hu</a>, <a href="https://valentin.deschaintre.fr/">Valentin Deschaintre</a> and <a href="http://www.miloshasan.net/">Miloš Hašan</a> as a Research Scientist Intern at Adobe Research. Before my Ph.D., I received my Bachelor degree of engineering from <a href="http://www.sysu.edu.cn/">Sun Yat-sen University</a> in 2019. <br><br>My research focuses on appearance acquisition, representation, and rendering in computer graphics. Currently, I am particularly interested in multi-modal material generation using advanced techniques. 
+linkedin: https://www.linkedin.com/in/xiaohe-ma-aaa850300/
 google_scholar: https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=Im9lZnkAAAAJ/
 github_link: https://github.com/BeAShaper
 # linkedin: https://www.linkedin.com/
 avatar: ./assets/img/photo.png
 zju: ./assets/img/zju2.png
-sysu: ./assets/img/sysu2.png
+sysu: ./assets/img/sysu2.png      
 google_analytics: UA-111540567-4
 favicon: ./assets/img/favicon.png
 favicon_dark: ./assets/img/favicon-dark.png
