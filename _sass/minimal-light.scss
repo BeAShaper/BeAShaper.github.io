@@ -219,6 +219,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     vertical-align: middle;
+    table-layout: fixed;
 }
 
 th,
@@ -239,6 +240,8 @@ td p {
 
 tr {
     vertical-align: middle;
+    display: flex;
+    width: 100%;
 }
 
 dt {
@@ -249,7 +252,17 @@ dt {
 th {
     color: #444;
 }
-
+.experience-description {
+    color: #5e5e5e; 
+}
+.td-image{
+    width:140px;
+    flex-shrink: 0;
+}
+.td-text{
+    flex-grow: 1;   
+    padding-left: 10px;  
+}
 
 header {
     width: 220px;

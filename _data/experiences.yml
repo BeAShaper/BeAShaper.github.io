@@ -1,7 +1,7 @@
 - project: Intern
-  role: Research Scientist Intern, Adobe Research
-  duration: Jun. 2024 - Sep. 2024
+  role: <b>Research Scientist Intern, Adobe Research</b>
+  duration: "Jun. 2024 - Sep. 2024"
   position: Adobe Inc., San Jose, California, U.S.
   image: assets/img/Adobe_Corporate_logo.svg
   # project: Multi-modal material generation with Diffusion Transformers
-  description: Multi-modal material generation with Diffusion Transformers
+  description: Developed a Multi-Modal Material Generation with Diffusion Transformers, conditioned on image crops and/or text prompts.
