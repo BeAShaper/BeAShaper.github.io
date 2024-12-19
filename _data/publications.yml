@@ -21,7 +21,7 @@
 - project_name: Efficient Reflectance Capture with a Deep Gated Mixture-of-Experts
   teaser_img: assets/img/moe.gif
   authors: <b>Xiaohe Ma</b>, Yaxin Yu, <a href=http://hongzhiwu.com/>Hongzhi Wu</a> and <a href=http://kunzhou.net/>Kun Zhou</a>  
-  platform: To appear in IEEE TVCG
+  platform: IEEE TVCG, 30, 7(July 2024), 4246-4256.
   pdf_link: https://ieeexplore.ieee.org/document/10081427
   video_link_youtube: https://youtu.be/v2SyeMUV6_Y
   video_link_bilibili: https://www.bilibili.com/video/BV1ZL411r7iq/
