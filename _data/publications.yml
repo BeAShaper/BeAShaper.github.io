@@ -1,12 +1,12 @@
 # Projects
 # uncomment the urls if you wish to display them, and add your own URL
 
-# - project_name: "MaterialPicker: Multi-Modal Material Generation with Diffusion Transformers"
-#   teaser_img: publications/materialpicker/static/images/teaser_square.jpg
-#   # authors: <b>Xiaohe Ma</b>, <a href=https://valentin.deschaintre.fr/>Valentin Deschaintre</a>, <a href=http://www.miloshasan.net/>Miloš Hašan</a>, <a href=https://luanfujun.com/>Fujun Luan</a>, <a href=http://kunzhou.net/>Kun Zhou</a>, <a href=http://hongzhiwu.com/>Hongzhi Wu</a> and <a href=https://yiweihu.netlify.app/>Yiwei Hu</a>
-#   platform: Arxiv 2024 
-#   project_page_url: https://BeAShaper.github.io/publications/materialpicker/index.html
-#   # database_url: https://opensvbrdf.github.io/
+- project_name: "MaterialPicker: Multi-Modal Material Generation with Diffusion Transformers"
+  teaser_img: publications/materialpicker/static/images/teaser_square.jpg
+  authors: <b>Xiaohe Ma</b>, <a href=https://valentin.deschaintre.fr/>Valentin Deschaintre</a>, <a href=http://www.miloshasan.net/>Miloš Hašan</a>, <a href=https://luanfujun.com/>Fujun Luan</a>, <a href=http://kunzhou.net/>Kun Zhou</a>, <a href=http://hongzhiwu.com/>Hongzhi Wu</a> and <a href=https://yiweihu.netlify.app/>Yiwei Hu</a>
+  platform: To appear in SIGGRAPH 2025 (Journal).
+  project_page_url: https://BeAShaper.github.io/publications/materialpicker/index.html
+  # database_url: https://opensvbrdf.github.io/
 
 - project_name: "OpenSVBRDF: A Database of Measured Spatially-Varying Reflectance"
   teaser_img: assets/img/sorted_teaser_new.jpg
