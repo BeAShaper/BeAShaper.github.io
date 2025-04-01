@@ -1,7 +1,7 @@
 # Projects
 # uncomment the urls if you wish to display them, and add your own URL
 
-- project_name: "MaterialPicker: Multi-Modal Material Generation with Diffusion Transformers"
+- project_name: "MaterialPicker: Multi-Modal DiT-Based Material Generation"
   teaser_img: publications/materialpicker/static/images/teaser_square.jpg
   authors: <b>Xiaohe Ma</b>, <a href=https://valentin.deschaintre.fr/>Valentin Deschaintre</a>, <a href=http://www.miloshasan.net/>Miloš Hašan</a>, <a href=https://luanfujun.com/>Fujun Luan</a>, <a href=http://kunzhou.net/>Kun Zhou</a>, <a href=http://hongzhiwu.com/>Hongzhi Wu</a> and <a href=https://yiweihu.netlify.app/>Yiwei Hu</a>
   platform: To appear in SIGGRAPH 2025 (Journal).
